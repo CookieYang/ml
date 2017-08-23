@@ -7,5 +7,5 @@ def splitDataSet(dataSet1,dataSet2,test_proportion = 0.2):
     for i in range(len(test)):
         total.remove(test[i])
     return dataSet1[test,:],dataSet2[test,:],dataSet1[total,:],dataSet2[total,:]
-a = np.eye(10)
-c, d, e, f = splitDataSet(a,a)
+# a = np.eye(10)
+# c, d, e, f = splitDataSet(a,a)
