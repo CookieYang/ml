@@ -20,7 +20,7 @@ def transform_to_tfrecord():
                                               'Sex':int_feature(1 if data['Sex'][i] == 'male' else 0),
                                               'Fare':float_feature(data['Fare'][i])})
         example = tf.train.Example(features = features)
-        writer.write(example.SerilizeToString())
+        writer.write(example.SerializeToString())
     writer.close()
 
 transform_to_tfrecord()
